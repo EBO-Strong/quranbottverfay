@@ -13,8 +13,8 @@ module.exports = {
     var embed = new MessageEmbed()
       .setColor("#2F3136")
       .setFooter(
-        `القراآن الكريم | صفحة رقم ${page} من اصل ${pages.length} صفحة`,
-        "https://media.discordapp.net/attachments/756329106953601225/820445307783086090/unnamed.webp"
+        `القراآن الكريم  رقم ${page} من اصل ${pages.length} صفحة`,
+        "https://cdn.discordapp.com/avatars/758813926472941578/66e9b6014102bba65bded8323a252d4a.png?size=1024"
       )
       .setImage(pages[page - 1]);
     message.channel.send({ embed: embed }).then(msg => {
