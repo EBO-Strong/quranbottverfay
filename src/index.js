@@ -7,6 +7,20 @@ const mongo = require("./db/mongo");
 
 client.commands = new Collection();
 
+
+
+
+
+    client.on("ready", () => {
+    function randomStatus() {
+        let status = [`${client.guilds.cache.size} Servers`, `بسم الله الرحمن الرحيم`, `e!help`, `e!quran`]
+        let rstatus = Math.floor(Math.random() * status.length);
+        client.user.setActivity(status[rstatus], {type: "COMPETING"});    
+    }; setInterval(randomStatus, 3000)
+})
+
+
+
 const connectToMongoDB = async() => {
     await mongo().then(async mongosse => {
         try {
