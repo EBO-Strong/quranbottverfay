@@ -14,11 +14,11 @@ module.exports = {
       .send(
         new MessageEmbed()
           .setThumbnail(
-            "https://e7.pngegg.com/pngimages/314/453/png-clipart-online-quran-project-the-holy-qur-an-text-translation-and-commentary-islam-arabic-calligraphy-attend-class-class-begins-emblem-logo-thumbnail.png"
+            "https://cdn.discordapp.com/avatars/758813926472941578/66e9b6014102bba65bded8323a252d4a.png?size=1024"
           )
           .setAuthor(
-            "مشغل القرءان",
-            "https://e7.pngegg.com/pngimages/314/453/png-clipart-online-quran-project-the-holy-qur-an-text-translation-and-commentary-islam-arabic-calligraphy-attend-class-class-begins-emblem-logo-thumbnail.png"
+            "Listening Quran",
+            "https://cdn.discordapp.com/avatars/758813926472941578/66e9b6014102bba65bded8323a252d4a.png?size=1024"
           )
           .setColor(0x2f3136)
           .setDescription(
