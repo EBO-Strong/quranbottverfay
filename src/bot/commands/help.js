@@ -15,7 +15,7 @@ module.exports = {
     message.channel.send(
       new MessageEmbed()
         .setAuthor(
-          "قائمة المساعده 🕌",
+          "General Commands🕌",
           "https://athkarapp.com/images/athkarLogo.png"
         )
         .setThumbnail(client.user.avatarURL({ dynaimc: true }))
@@ -24,28 +24,32 @@ module.exports = {
           client.user.username,
           client.user.avatarURL({ dynaimc: true })
         ).setDescription(`
-**أوامر عامه**
-> 🕌 \`${prefix}help\` **للحصول على قاءمة السماعده**
-> 🕌 \`${prefix}ping\` **للحصول على نتيجه ببينج البوت**
+**Info**
+> 🕌 \`${prefix}help\`
+> 🕌 \`${prefix}ping\`
 
-**أوامر الأذكار**
-> 🕌 \`${prefix}set-azkar-channel\` **لتحديد روم نشر الأذكار**
-> 🕌 \`${prefix}set-azkar-embed\` **للتغير ما بين نظام نشر الأذكار من رساءل عاديه ل رساءل ايمبد**
-> 🕌 \`${prefix}set-azkar-toggle\` **لايقاف و تشغيل نظام أرسال الأذكار**
-> 🕌 \`${prefix}morning\` **للحصول على اذكار الصباح**
-> 🕌 \`${prefix}evening\` **للحصول على اذكار المساء**
-> 🕌 \`${prefix}mos7f\` **للحصول على صفحات المصحف الكريم**
+**Azkar**
+> 🕌 \`${prefix}set-azkar-channel\`
+> 🕌 \`${prefix}set-azkar-embed\`
+> 🕌 \`${prefix}set-azkar-toggle\`
+> 🕌 \`${prefix}morning\`
+> 🕌 \`${prefix}evening\`
+> 🕌 \`${prefix}mos7f\`
 
-**أوامر القرءان**
-> 🕌 \`${prefix}set-quran-channel\` **لتحديد روم اذاعة القرءان الكريم**
-> 🕌 \`${prefix}set-quran-toggle\` **لاقاف و تشغيل نظام أذاعة القرءان الكريم**
-> 🕌 \`${prefix}quran\` **لتشغيل صور معينه في القرءان الكريم**
+**Quran**
+> 🕌 \`${prefix}set-quran-channel\`
+> 🕌 \`${prefix}set-quran-toggle\`
+> 🕌 \`${prefix}quran\`
 
-**برفكس السيرفر**: \`${prefix}\`
+**Perfix bot in the server**: \`${prefix}\`
 
-**روابط تابعة للبوت:**
-**[سيرفر الدعم الفني](https://www.youtube.com/watch?v=BThsyooJOj4) \`|\` [الموقع الخاص بالبوت](https://www.youtube.com/watch?v=BThsyooJOj4) \`|\` [التصويت للبوت](https://www.youtube.com/watch?v=BThsyooJOj4) \`|\` [اضافة البوت](https://www.youtube.com/watch?v=BThsyooJOj4)**`)
-      // .addFields(
+**Links:**
+[ InviteBot ]() - [ ServerSupport ]()
+
+
+
+
+// .addFields(
       //   { name: `> ${prefix}help`, value: "**`للحصول على قاءمة السماعده`**", inline: false },
       //   { name: `> ${prefix}support`, value: "**`للحصول على روابط مساعدة البوت`**", inline: false },
       //   { name: `> ${prefix}ping`, value: "**`للحصول على نتيجه ببينج البوت`**", inline: false },
