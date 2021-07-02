@@ -13,12 +13,12 @@ module.exports = {
     if (!args) {
       quickdb.set(`Prefix_${message.guild.id}`, require('../../config/bot').prefix);
       message.channel.send(
-        "**:white_check_mark: | تمت أعادة برفكس البوت الى البرفكس الأساسي**"
+        "Successfully reseted a prefix in server"
       );
     } else if (args) {
       quickdb.set(`Prefix_${message.guild.id}`, args);
       message.channel.send(
-        `**:white_check_mark: | ${args} تم تغير البرفكس لـ**`
+        `Chaneged a prefix to | **${args}**`
       );
     }
   }
