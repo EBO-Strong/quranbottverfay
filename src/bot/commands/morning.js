@@ -12,11 +12,11 @@ module.exports = {
         .setThumbnail("https://athkarapp.com/images/athkarLogo.png")
         .setAuthor(
           "أذكار الصباح",
-          "https://athkarapp.com/images/athkarLogo.png"
+          "https://cdn.discordapp.com/avatars/758813926472941578/66e9b6014102bba65bded8323a252d4a.png?size=1024"
         )
         .setTitle("**المصدر**")
         .setURL(
-          "https://www.islambook.com/azkar/1/%D8%A3%D8%B0%D9%83%D8%A7%D8%B1-%D8%A7%D9%84%D8%B5%D8%A8%D8%A7%D8%AD"
+          "https://cdn.discordapp.com/avatars/758813926472941578/66e9b6014102bba65bded8323a252d4a.png?size=1024"
         )
         .setColor(0x2f3136)
         .setDescription("**" + result + "**")
