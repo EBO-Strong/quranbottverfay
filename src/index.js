@@ -10,7 +10,7 @@ client.commands = new Collection();
 const connectToMongoDB = async() => {
     await mongo().then(async mongosse => {
         try {
-            console.log(chalk.green.bold("Connected to mongoDB!"));
+            console.log(chalk.green.bold("mongodb+srv://ALEX:hvgqXetXFfBbVzb6@cluster0.epc7j.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"));
         } finally {
             mongosse.connection.close();
         }
