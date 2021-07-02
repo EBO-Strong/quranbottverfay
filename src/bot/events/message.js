@@ -32,13 +32,9 @@ module.exports = async function(client, message) {
     if (current_time < expiration_time) {
       const time_left = (expiration_time - current_time) / 1000;
       return message.channel.send(
-        new MessageEmbed()
-          .setColor("RED")
-          .setDescription(
             `**⏲️ | You Are In Cooldown Please Wait \`${time_left.toFixed(
               1
             )}\` To Use \`${command.name}\` Again**`
-          )
       );
     }
   }
