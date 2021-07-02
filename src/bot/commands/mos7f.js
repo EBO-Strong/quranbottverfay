@@ -13,7 +13,7 @@ module.exports = {
     var embed = new MessageEmbed()
       .setColor("#2F3136")
       .setFooter(
-        `Page number | القراآن الكريم ${page} من اصل ${pages.length} صفحة`,
+        `القراآن الكريم | Page ${pages.length} in ${page} pages`,
         "https://cdn.discordapp.com/avatars/758813926472941578/66e9b6014102bba65bded8323a252d4a.png?size=1024"
       )
       .setImage(pages[page - 1]);
@@ -33,8 +33,8 @@ module.exports = {
           page--;
           embed.setImage(pages[page - 1]);
           embed.setFooter(
-            `القراآن الكريم | صفحة رقم ${page} من اصل ${pages.length} صفحة`,
-            "https://images-ext-2.discordapp.net/external/Fp9gUUJ_-w-JKouEOUSeDrP0mPDn4PBlOunqJiqA7Ao/https/e7.pngegg.com/pngimages/698/430/png-clipart-the-holy-qur-an-text-translation-and-commentary-tafsir-noble-quran-quran-translations-al-quran-holy-qur-an-text.png?width=427&height=427"
+            `القراآن الكريم | Page ${pages.length} in ${page} pages`,
+            "https://cdn.discordapp.com/avatars/758813926472941578/66e9b6014102bba65bded8323a252d4a.png?size=1024"
           );
           msg.edit({ embed: embed });
           r.users.remove(message.author.id).catch(err => console.log(err));
@@ -44,8 +44,8 @@ module.exports = {
           page++;
           embed.setImage(pages[page - 1]);
           embed.setFooter(
-            `القراآن الكريم | صفحة رقم ${page} من اصل ${pages.length} صفحة`,
-            "https://images-ext-2.discordapp.net/external/Fp9gUUJ_-w-JKouEOUSeDrP0mPDn4PBlOunqJiqA7Ao/https/e7.pngegg.com/pngimages/698/430/png-clipart-the-holy-qur-an-text-translation-and-commentary-tafsir-noble-quran-quran-translations-al-quran-holy-qur-an-text.png?width=427&height=427"
+            `القراآن الكريم | Page ${pages.length} in ${page} pages`,
+            "https://cdn.discordapp.com/avatars/758813926472941578/66e9b6014102bba65bded8323a252d4a.png?size=1024"
           );
           msg.edit({ embed: embed });
           r.users.remove(message.author.id).catch(err => console.log(err));
