@@ -13,7 +13,7 @@ module.exports = {
     var embed = new MessageEmbed()
       .setColor("#2F3136")
       .setFooter(
-        `القراآن الكريم | Page ${pages.length} in ${page} pages`,
+        `القراآن الكريم | Page ${page} in ${pages.length} pages`,
         "https://cdn.discordapp.com/avatars/758813926472941578/66e9b6014102bba65bded8323a252d4a.png?size=1024"
       )
       .setImage(pages[page - 1]);
@@ -33,7 +33,7 @@ module.exports = {
           page--;
           embed.setImage(pages[page - 1]);
           embed.setFooter(
-            `القراآن الكريم | Page ${pages.length} in ${page} pages`,
+            `القراآن الكريم | Page ${page} in ${pages.length} pages`,
             "https://cdn.discordapp.com/avatars/758813926472941578/66e9b6014102bba65bded8323a252d4a.png?size=1024"
           );
           msg.edit({ embed: embed });
@@ -44,7 +44,7 @@ module.exports = {
           page++;
           embed.setImage(pages[page - 1]);
           embed.setFooter(
-            `القراآن الكريم | Page ${pages.length} in ${page} pages`,
+            `القراآن الكريم | Page ${page} in ${pages.length} pages`,
             "https://cdn.discordapp.com/avatars/758813926472941578/66e9b6014102bba65bded8323a252d4a.png?size=1024"
           );
           msg.edit({ embed: embed });
