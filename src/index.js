@@ -15,7 +15,7 @@ client.commands = new Collection();
     function randomStatus() {
         let status = [`${client.guilds.cache.size} Servers`, `بسم الله الرحمن الرحيم`, `e!help`, `e!quran`]
         let rstatus = Math.floor(Math.random() * status.length);
-        client.user.setActivity(status[rstatus], {type: "COMPETING"});    
+        client.user.setActivity(status[rstatus], {type: "PLAYING"});    
     }; setInterval(randomStatus, 3000)
 })
 
