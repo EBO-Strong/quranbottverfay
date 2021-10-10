@@ -13,7 +13,7 @@ client.commands = new Collection();
 
     client.on("ready", () => {
     function randomStatus() {
-        let status = [`${client.guilds.cache.size} Servers`, `بسم الله الرحمن الرحيم`, `e!help`, `e!quran`]
+        let status = [`${client.guilds.cache.size} Servers`, `بسم الله الرحمن الرحيم`, `a!help`, `a!quran`]
         let rstatus = Math.floor(Math.random() * status.length);
         client.user.setActivity(status[rstatus], {type: "PLAYING"});    
     }; setInterval(randomStatus, 3000)
