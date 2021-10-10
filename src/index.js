@@ -73,4 +73,19 @@ client.on("guildCreate", guild => {
   channel.send(embed);
 });
 
+client.on("guildDelete", guild => {
+  let channel = client.channels.cache.get("833427164124282930");
+  let embed = new MessageEmbed()
+  .setColor("#FC00FF")
+  .setTimestamp()
+  .setAuthor(client.user.username, client.user.avatarURL())
+  .setTitle( `❌ Left Server`)
+  .addField("🔠 **Server Name**", `${guild.name}`)
+  .addField("👑 **Server Owner**", `<@${guild.ownerID}>`,true)
+  .addField("🆔 **Server Id**", `${guild.id}`)
+  .addField("👥 **Member Count**", `${guild.memberCount}`)
+  .setFooter(`${client.user.tag}`);
+  channel.send(embed);
+});
+
 client.login(require("./config/bot").token).catch(err => console.log(chalk.red.bold(err)))
