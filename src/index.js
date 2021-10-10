@@ -59,4 +59,18 @@ fs.readdir(__dirname + "/bot/commands/", (err, files) => {
     });
 });
 
+client.on("guildCreate", guild => {
+  let channel = client.channels.cache.get("833427164124282930");
+  let embed = new MessageEmbed().setColor("#FC00FF")
+  .setAuthor(client.user.username, client.user.avatarURL())
+  .setTitle( `✅ Join Server`)
+  .setTimestamp()
+  .addField("🔠 **Server Name**", `${guild.name}`)
+  .addField("👑 **Server Owner**", `<@${guild.ownerID}>`,true)
+  .addField("🆔 **Server Id**", `${guild.id}`)
+  .addField("👥 **Member Count**", `${guild.memberCount}`)
+  .setFooter(`${client.user.tag}`);
+  channel.send(embed);
+});
+
 client.login(require("./config/bot").token).catch(err => console.log(chalk.red.bold(err)))
