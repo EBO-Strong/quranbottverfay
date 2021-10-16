@@ -44,7 +44,7 @@ module.exports = {
 **Perfix bot in the server**: \`${prefix}\`
 
 **Links:**
-[ InviteBot ](https://discord.com/api/oauth2/authorize?client_id=863753345600323594&permissions=8&scope=bot) - [ ServerSupport ](https://discord.gg/kSsKYgDySd)
+[ InviteBot ](https://discord.com/api/oauth2/authorize?client_id=758813926472941578&permissions=0&scope=bot) - [ ServerSupport ](https://discord.gg/rxjENhqZJD)
 `)
 
     );
