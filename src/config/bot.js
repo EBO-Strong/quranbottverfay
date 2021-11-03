@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 module.exports = {
-    token:"NzU4ODEzOTI2NDcyOTQxNTc4.X20aig.7pl8APAChEBYYnNWae_SsBnxxww",
+    token:"NzYwODQxMDI0MDE5ODkwMjU3.X3R6aw.yreFL_LVFevjKodn-Iv0AtX8UJU",
     mongoPath:"mongodb+srv://ALEX:hvgqXetXFfBbVzb6@cluster0.epc7j.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     prefix: "a!",
     expressURL: "" // if you have a express server but it here to uptime you project
