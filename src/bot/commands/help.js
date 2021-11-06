@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("discord.js");
+>const { MessageEmbed } = require("discord.js");
 const quickdb = require("quick.db");
 
 module.exports = {
@@ -44,7 +44,7 @@ module.exports = {
 **Perfix bot in the server**: \`${prefix}\`
 
 **Links:**
-[ InviteBot ](https://discord.com/api/oauth2/authorize?client_id=758813926472941578&permissions=0&scope=bot) - [ ServerSupport ](https://discord.gg/rxjENhqZJD)
+[ InviteBot ](https://discord.com/api/oauth2/authorize?client_id=760841024019890257&permissions=8&scope=bot) - [ ServerSupport ]()
 `)
 
     );
